@@ -13,8 +13,11 @@ Out of the 81 combinations, only hulk is a valid name. This is arrived by mappin
 to letters in the following manner:
 
 4 – h
+
 8 – u
+
 5 – l
+
 5 – k
 
 Write a program that asks for code and decodes the name of the correct super hero based
@@ -25,14 +28,20 @@ Summary:
 Program Input
 
 0 228626
+
 0 4855
+
 0 78737626
+
 0 8467
 
 Program Output
 
 BATMAN
+
 HULK
+
 SUPERMAN
+
 THOR
 
