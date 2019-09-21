@@ -63,6 +63,7 @@
       [
         "env",
         {
+          "es6": true,
           "targets": {
             "node": "current"
           }

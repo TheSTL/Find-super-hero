@@ -14,6 +14,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
+app.get('/', (req, res)=>{
+  res.json('Good')
+});
 app.use('/', routes);
 
 // Catch 404 and forward to error handler
@@ -27,7 +30,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   res
     .status(err.status || 500)
-    .render('error', {
+    .json({
       message: err.message
     });
 });

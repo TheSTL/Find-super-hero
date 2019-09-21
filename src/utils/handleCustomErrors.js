@@ -1,6 +1,8 @@
 const sendResponse = require('./sendResponse');
 
 function handleCustomThrow(res, error) {
+  console.log('Error----',error);
+  
   if (error.parent && error.parent.code === 'ER_DUP_ENTRY') {
     return sendResponse(res, 409, {}, 'Duplicate entry');
   }
